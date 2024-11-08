@@ -1,0 +1,257 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main_Page.master.cs" Inherits="Main_Page" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Cab In Jamner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+        rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        ul
+        {
+            list-style-type:none;
+            text-decoration:none;
+            margin: 0;
+            padding: 0;
+        }
+       li
+        {
+        	display:inline-block;
+        	padding:10px 10px ;
+        	border:1px solid black ;
+        	cursor:pointer;
+        	margin:4px 4px;
+        	color:black;
+        	
+        	
+        }
+        li a
+        {
+        	text-decoration:none;
+        }
+        li:hover
+        {
+        	background-color: #60DBF3;
+        	transition :0.6s ease;
+        	
+        }
+        .para
+        {
+        	margin:0;
+        	padding:0;
+        	font-family: Arial;
+        }
+        .img
+        {
+        	width="500px";
+        	transition:0.3s ease;
+      
+        }
+        .img:hover
+        {
+        	width:"505px";
+        	box-shadow:10px 10x 5px red;
+        	transform:scale(1.1);
+        	
+        	
+        }
+        .homeimg
+        {
+        	width:"150px";
+        	transition:0.3s ease;
+        }
+        .homeimg:hover
+        {
+        	width:"160px";
+        	transform:scale(1.1);
+        }
+        	
+        	
+       
+      
+        .footer
+        {
+        padding:10px 10px;
+        margin:5px 5px;
+        }
+        a
+        {
+        	padding:5px 5px;
+        	margin:4px 4px;
+            font-size: large;
+            font-family: GIST-DGR-OTDhruv;
+        }
+        .menuf
+        {
+        	display:inline;
+        	padding:10px 10px ;
+        	transition:0.3s ease;
+        	cursor:pointer;
+        	margin:4px 4px;
+        	color:black;
+        }
+        .menuf:hover
+        
+        {
+        	transform:scale(1.1);
+        }
+        .BTN
+        {
+        	cursor:pointer;
+        	
+        }
+       
+        	
+        
+      
+     	
+        	
+        	
+        	
+        	
+    </style>
+</head>
+<body style="font-family: Bahnschrift; font-weight: 700">
+    <div>
+        <form id="form1" runat="server">
+        <div align="center">
+            <table width="1500px" height="750px">
+                <tr>
+                    <td>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            <div style="background-image: url('/ OTS/Images/background.jpg'); background-repeat: no-repeat">
+                                <div class="hfpart">
+                                    <div align="center">
+                                        <br />
+                                        <asp:Label ID="Label1" runat="server" Text="Cab In Jamner" ForeColor="Black" BorderStyle="None"
+                                            Font-Bold="True" Font-Size="XX-Large" Style="font-family: 'Yu Gothic Light';
+                                            text-decoration: underline;"></asp:Label>
+                                        <br />
+                                        <br />
+                                        <br />
+                                    </div>
+                                    <div align="right">
+                                        <asp:Image ID="Image4" runat="server" ImageUrl="~/login png.png" Width="27px" Height="26px" />
+                                        <asp:HyperLink ID="HyperLink12" runat="server" ForeColor="Black" NavigateUrl="~/Login.aspx">Admin</asp:HyperLink>
+                                    </div>
+                                </div>
+                                <div align="center">
+                                    <ul>
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink2" runat="server" Style="font-weight: 700" NavigateUrl="~/Home.aspx"
+                                                ForeColor="Black">Home</asp:HyperLink>
+                                        </li>
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink3" runat="server" Style="font-weight: 700" ForeColor="Black"
+                                                NavigateUrl="~/Registration.aspx"> Tours Registration </asp:HyperLink>
+                                        </li>
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink4" runat="server" Style="font-weight: 700" ForeColor="Black"
+                                                NavigateUrl="~/dev darshan.aspx">Dev Darshan</asp:HyperLink>
+                                        </li>
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink1" runat="server" Style="font-weight: 700" ForeColor="Black"
+                                                NavigateUrl="~/tourism place.aspx">Tourism Place</asp:HyperLink>
+                                        </li>
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink5" runat="server" Style="font-weight: 700" ForeColor="Black"
+                                                NavigateUrl="~/Services.aspx">Services</asp:HyperLink>
+                                        </li>
+                                        <li>
+                                            <asp:HyperLink ID="HyperLink8" runat="server" Style="font-weight: 700" ForeColor="Black"
+                                                NavigateUrl="~/Contact.aspx">Conatct Us</asp:HyperLink>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <br />
+                                <br />
+                            </div>
+                        </asp:ContentPlaceHolder>
+        </div>
+        </td> </tr>
+        <tr>
+            <td>
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        <div>
+                        </div>
+                    </asp:ContentPlaceHolder>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div align="center">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                        <div class="fpart" style="background-image: url('/ OTS/Images/background.jpg'); background-repeat: no-repeat">
+                            <div style="font-weight: 700">
+                                <asp:Label ID="Label3" runat="server" Text="Cab In Jamner" ForeColor="#F67F09" Style="font-size: x-large;
+                                    text-decoration: underline;"></asp:Label>
+                                <br />
+                            </div>
+                            <div class="footer">
+                                <asp:ImageButton ID="ImageButton1" runat="server" Width="3%"
+                                    ImageUrl="~/Images/whatsapp-logo-png-2263.png" 
+                                    PostBackUrl="https://www.whatsapp.com/business/"  />
+                                &nbsp;&nbsp;&nbsp;
+                                <asp:ImageButton ID="ImageButton2" runat="server" Width="3%" 
+                                    ImageUrl="~/Images/logo-instagram-png-2431.png" 
+                                    PostBackUrl="https://instagram.com/_silent_durgesh_?igshid=YmMyMTA2M2Y=" />
+                                &nbsp;&nbsp;&nbsp;
+                                <asp:ImageButton ID="ImageButton3" runat="server" Width="3%" 
+                                    ImageUrl="~/Images/facebook-logo-493.png" 
+                                    PostBackUrl="https://www.facebook.com/profile.php?id=100073465504857" />
+                            </div>
+                            <div align="center" class="menuf">
+                                <ul>
+                                    <li>
+                                        <asp:HyperLink ID="HyperLink7" runat="server" Style="font-weight: 700">Home</asp:HyperLink>
+                                    </li>
+                                    <li>
+                                        <asp:HyperLink ID="HyperLink9" runat="server" Style="font-weight: 700" ForeColor="Black"
+                                            NavigateUrl="~/Registration.aspx"> Tours Regestration</asp:HyperLink>
+                                    </li>
+                                    <li>
+                                        <asp:HyperLink ID="HyperLink10" runat="server" Style="font-weight: 700" ForeColor="Black"
+                                            NavigateUrl="~/dev darshan.aspx">Dev Darshan</asp:HyperLink>
+                                    </li>
+                                    <li>
+                                        <asp:HyperLink ID="HyperLink6" runat="server" Style="font-weight: 700" ForeColor="Black"
+                                            NavigateUrl="~/tourism place.aspx">Tourism Place</asp:HyperLink>
+                                    </li>
+                                    <li>
+                                        <asp:HyperLink ID="HyperLink11" runat="server" Style="font-weight: 700" ForeColor="Black"
+                                            NavigateUrl="~/Services.aspx">Services</asp:HyperLink>
+                                    </li>
+                                    <li>
+                                        <asp:HyperLink ID="HyperLink13" runat="server" Style="font-weight: 700" ForeColor="Black"
+                                            NavigateUrl="~/Contact.aspx">Conatct Us</asp:HyperLink>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br />
+                            <div>
+                                <asp:Label ID="Label2" runat="server" Text="Ainfo Copyright@2023" Font-Bold="True"
+                                    Style="font-family: Bahnschrift"></asp:Label>
+                                &nbsp
+                                <asp:Label ID="Label4" runat="server" Text="Cab In Jamner" Style="font-weight: 700;
+                                    font-family: Bahnschrift;"></asp:Label>
+                                <br />
+                                <asp:Label ID="Label5" runat="server" Text="Designed & Developed By" Style="font-weight: 700"></asp:Label>
+                                <br />DURGESH JOSHI</div>
+                            <br />
+                        </div>
+                    </asp:ContentPlaceHolder>
+                </div>
+            </td>
+        </tr>
+        </table>
+    </div>
+    </form> </div>
+</body>
+</html>
